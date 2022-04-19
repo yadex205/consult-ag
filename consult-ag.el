@@ -1,10 +1,10 @@
-;;; consult-ag.el -- The silver searcher integration using Consult -*- lexical-binding: t; -*-
+;;; consult-ag.el --- The silver searcher integration using Consult -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2022 Kanon Kakuno
 
 ;; Author: Kanon Kakuno <yadex205@outlook.jp>
 ;; Homepage: https://github.com/yadex205/consult-ag
-;; Package-Requires: (emacs "27.1") (consult "0.16")
+;; Package-Requires: ((emacs "27.1") (consult "0.16"))
 ;; SPDX-License-Identifier: MIT
 ;; Version: 0.1.1
 
