@@ -6,7 +6,7 @@
 ;; Homepage: https://github.com/yadex205/consult-ag
 ;; Package-Requires: ((emacs "27.1") (consult "0.16"))
 ;; SPDX-License-Identifier: MIT
-;; Version: 0.1.1
+;; Version: 0.1.2
 
 ;; This file is not part of GNU Emacs.
 
