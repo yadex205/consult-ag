@@ -19,16 +19,6 @@
 
 (require 'consult)
 
-(defgroup consult-ag nil
-  "The Silver Searcher integration for Consult."
-  :group 'consult)
-
-(defcustom consult-ag-args
-  "ag"
-  "Base command of `ag`."
-  :type 'string
-  :group 'consult-ag)
-
 (defun consult-ag--builder (input)
   "Build command line given INPUT."
   (pcase-let* ((cmd (split-string-and-unquote "ag --vimgrep"))
