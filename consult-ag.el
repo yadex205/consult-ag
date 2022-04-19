@@ -17,6 +17,9 @@
 
 ;;; Code:
 
+(eval-when-compile ; IDK but required for byte-compile
+  (require 'cl-lib)
+  (require 'subr-x))
 (require 'consult)
 
 (defun consult-ag--builder (input)
