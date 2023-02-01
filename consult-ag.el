@@ -48,7 +48,7 @@ FIND-FILE is the file open function, defaulting to `find-file`."
     (let ((file (get-text-property 0 'filename cand))
           (row (string-to-number (get-text-property 0 'row cand)))
           (column (- (string-to-number (get-text-property 0 'column cand)) 1)))
-      (consult--position-marker (funcall (or find-file #'find-file) file) row column))))
+      (consult--marker-from-line-column (funcall (or find-file #'find-file) file) row column))))
 
 (defun consult-ag--grep-state ()
   "Not documented."
