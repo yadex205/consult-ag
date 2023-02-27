@@ -2,7 +2,7 @@
 
 ;; Copyright (C) 2022 Kanon Kakuno
 
-;; Author: Kanon Kakuno <yadex205@outlook.jp>
+;; Author: Kanon Kakuno <yadex205@outlook.jp> and contributors
 ;; Homepage: https://github.com/yadex205/consult-ag
 ;; Package-Requires: ((emacs "27.1") (consult "0.32"))
 ;; SPDX-License-Identifier: MIT
