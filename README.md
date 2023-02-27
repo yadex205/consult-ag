@@ -1,5 +1,8 @@
 # consult-ag.el
 
+[![MELPA](https://melpa.org/packages/consult-ag-badge.svg)](https://melpa.org/#/consult-ag)
+[![MELPA Stable](https://stable.melpa.org/packages/consult-ag-badge.svg)](https://stable.melpa.org/#/consult-ag)
+
 [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) integration for GNU Emacs using [Consult](https://github.com/minad/consult).
 
 ## Requirements
