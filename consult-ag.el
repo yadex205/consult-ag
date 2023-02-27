@@ -63,11 +63,11 @@ FIND-FILE is the file open function, defaulting to `find-file`."
 (defun consult-ag (&optional target initial)
   "Consult ag for query in TARGET file(s) with INITIAL input."
   (interactive)
-  (let* ((prompt-dir (consult--directory-prompt "Consult ag: " target))
-         (default-directory (cdr prompt-dir)))
+  (pcase-let* ((`(,prompt ,paths ,dir) (consult--directory-prompt "Consult ag: " target))
+               (default-directory dir))
     (consult--read (consult--async-command #'consult-ag--builder
                      (consult--async-map #'consult-ag--format))
-                   :prompt (car prompt-dir)
+                   :prompt prompt
                    :lookup #'consult--lookup-member
                    :state (consult-ag--grep-state)
                    :initial (consult--async-split-initial initial)
