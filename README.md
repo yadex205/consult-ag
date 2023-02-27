@@ -5,7 +5,7 @@
 ## Requirements
 
 * GNU Emacs >= 27.1
-* Consult >= 1.6
+* Consult >= 0.32
 * The Silver Searcher
 
 ## Usage
