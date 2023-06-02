@@ -66,7 +66,8 @@ FIND-FILE is the file open function, defaulting to `find-file`."
   (pcase-let* ((`(,prompt ,paths ,dir) (consult--directory-prompt "Consult ag: " target))
                (default-directory dir))
     (consult--read (consult--async-command #'consult-ag--builder
-                     (consult--async-map #'consult-ag--format))
+                     (consult--async-map #'consult-ag--format)
+                     :file-handler t)
                    :prompt prompt
                    :lookup #'consult--lookup-member
                    :state (consult-ag--grep-state)
